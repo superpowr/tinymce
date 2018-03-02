@@ -27,7 +27,12 @@
  * tinymce.util.LocalStorage.setItem('key', 'value');
  * var value = tinymce.util.LocalStorage.getItem('key');
  */
+let localStorage;
 
-const localStorage = window.localStorage;
+try {
+  localStorage = window.localStorage;
+} catch (error) {
+
+}
 
 export default localStorage;
