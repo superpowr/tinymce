@@ -1,5 +1,31 @@
 TinyMCE - JavaScript Library for Rich Text Editing
 ===================================================
+This is POWr's version of tinymce.
+Clone https://github.com/superpowr/tinymce.git
+Currently serving localstorage-check-access branch. 
+Create a new branch, make a change. Push your branch to github.
+Then run grunt. 
+NPM cannot point to subdirectories, so create a new branch <branchname>-compiled.
+Move the compiled contents out of ignored tinymce subdirectory into the main project folder.
+Delete all folders except this - 
+.github	
+plugins
+skins/lightgray
+themes
+.editorconfig
+.gitattributes
+.gitignore
+LICENSE.TXT
+changelog.txt
+jquery.tinymce.min.js
+package.json
+readme.md
+tinymce.js
+tinymce.min.js
+Compare with https://github.com/superpowr/tinymce/tree/localstorage-check-access-compiled
+Git push
+Then update powr repo's package.json to point to the new branch.
+
 
 Building TinyMCE
 -----------------
